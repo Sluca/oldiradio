@@ -46,7 +46,7 @@ void draw() {
   }
   
    ellipse(width/2+c2*cos(r),height/2-c2*sin(r), 10,10); //masodik kor
-  fill(#FF2424);
+  fill(#F0FF24);
   r=r+sebr;
 
   if (r>2*PI) {
@@ -54,7 +54,7 @@ void draw() {
   }
   
   ellipse(width/2-140+c2*cos(r), height/2-c2*sin(r), 10, 10);//masodik kor
-  fill(#FF2424);
+  fill(#F0FF24);
   r=r+sebr;
 
   if (r>2*PI) {
@@ -62,14 +62,14 @@ void draw() {
   }
   
   ellipse(width/2+140+c2*cos(r), height/2-c2*sin(r), 10, 10); //masodik kor
-  fill(#FF2424);
+  fill(#F0FF24);
   r=r+sebr;
 
   if (r>2*PI) {
     r=0.002;
   }
   ellipse(width/2+c3*cos(r),height/2-c3*sin(r), 10,10); //harmadik kor
-  fill(#FF2424);
+  fill(#24FFB8);
   r=r+sebr;
 
   if (r>2*PI) {
@@ -77,7 +77,7 @@ void draw() {
   }
   
   ellipse(width/2-140+c3*cos(r), height/2-c3*sin(r), 10, 10);//harmadik kor
-  fill(#FF2424);
+  fill(#24FFB8);
   r=r+sebr;
 
   if (r>2*PI) {
@@ -85,14 +85,14 @@ void draw() {
   }
   
   ellipse(width/2+140+c3*cos(r), height/2-c3*sin(r), 10, 10); //harmadik kor
-  fill(#FF2424);
+  fill(#24FFB8);
   r=r+sebr;
 
   if (r>2*PI) {
     r=0.002;
   }
   ellipse(width/2+c4*cos(r),height/2-c4*sin(r), 10,10); //negyedik kor
-  fill(#FF2424);
+  fill(#CF24FF);
   r=r+sebr;
 
   if (r>2*PI) {
@@ -100,7 +100,7 @@ void draw() {
   }
   
   ellipse(width/2-140+c4*cos(r), height/2-c4*sin(r), 10, 10);//negyedik kor
-  fill(#FF2424);
+  fill(#CF24FF);
   r=r+sebr;
 
   if (r>2*PI) {
@@ -108,7 +108,7 @@ void draw() {
   }
   
   ellipse(width/2+140+c4*cos(r), height/2-c4*sin(r), 10, 10); //negyedik kor
-  fill(#FF2424);
+  fill(#CF24FF);
   r=r+sebr;
 
   if (r>2*PI) {
