@@ -8,12 +8,13 @@ float sugar=0;
 
 void mozogj(){
   r=r+0.02;
+  
 }
 
 void kirajzol(){
   
   x=kpx+sugar*cos(r);
-  y=kpy-sugar*sin(r);
+  y=kpy+sugar*sin(r);
   fill(#000000);
   ellipse(x,y,10,10); 
  
@@ -24,6 +25,8 @@ Potty potty= new Potty();
 
 void setup() {
   size(1000, 700);
+ // est=loadImage ("Az_est.png");
+  
 potty.kpx=width/2;
 potty.kpy=height/2;
 potty.sugar=90;

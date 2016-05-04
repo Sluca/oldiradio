@@ -1,9 +1,9 @@
 
 float r;
 float x=75;
-float y=625;
-float sebx=0;
-float seby=-1;
+float y=75;
+float sebx=1;
+float seby=0;
 float sebr=0.002;
 PImage est;
 int c1=90;
@@ -21,7 +21,7 @@ void setup() {
 void draw() {
   background(est);
   
-  ellipse(width/2+c1*cos(r),height/2-c1*sin(r), 10,10); //belso harom
+  ellipse(width/2+c1*cos(r),height/2+c1*sin(r), 10,10); //belso harom
   fill(#FF2424);
   r=r+sebr;
 
@@ -29,7 +29,7 @@ void draw() {
     r=0.002;
   }
   
-  ellipse(width/2-140+c1*cos(r), height/2-c1*sin(r), 10, 10); //belso harom
+  ellipse(width/2-140+c1*cos(r), height/2+c1*sin(r), 10, 10); //belso harom
   fill(#FF2424);
   r=r+sebr;
 
@@ -37,7 +37,7 @@ void draw() {
     r=0.002;
   }
   
-  ellipse(width/2+140+c1*cos(r), height/2-c1*sin(r), 10, 10); //belso harom
+  ellipse(width/2+140+c1*cos(r), height/2+c1*sin(r), 10, 10); //belso harom
   fill(#FF2424);
   r=r+sebr;
 
@@ -45,7 +45,7 @@ void draw() {
     r=0.002;
   }
   
-   ellipse(width/2+c2*cos(r),height/2-c2*sin(r), 10,10); //masodik kor
+   ellipse(width/2+c2*cos(r),height/2+c2*sin(r), 10,10); //masodik kor
   fill(#FF2424);
   r=r+sebr;
 
@@ -53,7 +53,7 @@ void draw() {
     r=0.002;
   }
   
-  ellipse(width/2-140+c2*cos(r), height/2-c2*sin(r), 10, 10);//masodik kor
+  ellipse(width/2-140+c2*cos(r), height/2+c2*sin(r), 10, 10);//masodik kor
   fill(#FF2424);
   r=r+sebr;
 
@@ -61,22 +61,14 @@ void draw() {
     r=0.002;
   }
   
-  ellipse(width/2+140+c2*cos(r), height/2-c2*sin(r), 10, 10); //masodik kor
+  ellipse(width/2+140+c2*cos(r), height/2+c2*sin(r), 10, 10); //masodik kor
   fill(#FF2424);
   r=r+sebr;
 
   if (r>2*PI) {
     r=0.002;
   }
-  ellipse(width/2+c3*cos(r),height/2-c3*sin(r), 10,10); //harmadik kor
-  fill(#FF2424);
-  r=r+sebr;
-
-  if (r>2*PI) {
-    r=0.002;
-  }
-  
-  ellipse(width/2-140+c3*cos(r), height/2-c3*sin(r), 10, 10);//harmadik kor
+  ellipse(width/2+c3*cos(r),height/2+c3*sin(r), 10,10); //harmadik kor
   fill(#FF2424);
   r=r+sebr;
 
@@ -84,14 +76,7 @@ void draw() {
     r=0.002;
   }
   
-  ellipse(width/2+140+c3*cos(r), height/2-c3*sin(r), 10, 10); //harmadik kor
-  fill(#FF2424);
-  r=r+sebr;
-
-  if (r>2*PI) {
-    r=0.002;
-  }
-  ellipse(width/2+c4*cos(r),height/2-c4*sin(r), 10,10); //negyedik kor
+  ellipse(width/2-140+c3*cos(r), height/2+c3*sin(r), 10, 10);//harmadik kor
   fill(#FF2424);
   r=r+sebr;
 
@@ -99,7 +84,14 @@ void draw() {
     r=0.002;
   }
   
-  ellipse(width/2-140+c4*cos(r), height/2-c4*sin(r), 10, 10);//negyedik kor
+  ellipse(width/2+140+c3*cos(r), height/2+c3*sin(r), 10, 10); //harmadik kor
+  fill(#FF2424);
+  r=r+sebr;
+
+  if (r>2*PI) {
+    r=0.002;
+  }
+  ellipse(width/2+c4*cos(r),height/2+c4*sin(r), 10,10); //negyedik kor
   fill(#FF2424);
   r=r+sebr;
 
@@ -107,7 +99,15 @@ void draw() {
     r=0.002;
   }
   
-  ellipse(width/2+140+c4*cos(r), height/2-c4*sin(r), 10, 10); //negyedik kor
+  ellipse(width/2-140+c4*cos(r), height/2+c4*sin(r), 10, 10);//negyedik kor
+  fill(#FF2424);
+  r=r+sebr;
+
+  if (r>2*PI) {
+    r=0.002;
+  }
+  
+  ellipse(width/2+140+c4*cos(r), height/2+c4*sin(r), 10, 10); //negyedik kor
   fill(#FF2424);
   r=r+sebr;
 
@@ -125,5 +125,24 @@ void draw() {
   //indulj el felfele, menj vissza  a kezdopontba (75,75)
   //kezd ujra
   
- 
+ if (x>925) {
+   x = 925;
+   sebx=0;
+   seby=1;
+ }
+ if (y>625){
+   y = 625;
+   sebx=-1;
+   seby=0;
+ }
+ if (x<75){
+   x = 75;
+   sebx=0;
+   seby=-1;
+ }
+  if (y<75){
+    y = 75;
+    sebx=1;
+    seby=0;
+  }
 }
