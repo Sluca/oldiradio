@@ -119,6 +119,11 @@ void draw() {
   fill(#FF2424);
   x=x+sebx;
   y=y+seby;
+  //indulj el a (75,75) koordinatabol es menj el a (925,75)be, ha odaertel, valtoztasd meg a sebx 0-ra, a seby 1re, 
+  //indulj el lefele, menj el a (925,625) pontba, ott valtoztasd meg a sebx -1-re, a seby 0-ra
+  //indulj el lent balra, menj el a (75, 620)ig, ott valtoztasd meg a sebx 0-ra, a seby -1re. 
+  //indulj el felfele, menj vissza  a kezdopontba (75,75)
+  //kezd ujra
   
  
 }
