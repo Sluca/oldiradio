@@ -12,12 +12,20 @@ class Potty {
     r=r+0.02;
     if (x>width/2+68 && kpx==width/2){
       kpx=width/2+140;
-      r=3.95;
+      r=3.8;
     }
     if(x<width/2+68 && kpx==width/2+140){
       kpx=width/2;
-      r=1.2;
+      r=0.75;
     }
+   if(x>width/2-68 && kpx==width/2){
+   kpx=width/2-140;
+   r=1.7;
+   }
+   if(x<width/2-68 && kpx==width/2-140){
+     kpx=width/2;
+     r=2.6;
+   }
   }
 
   void kirajzol() {
