@@ -38,7 +38,7 @@ class Virag {
     x=kpx+sugar*cos(r);
     y=kpy+sugar*sin(r);
     
-    image (viragocska, x, y, 50, 50);
+    image (viragocska, x, y, 15, 15);
   }
 }
 
@@ -46,8 +46,8 @@ Virag virag= new Virag();
 
 void setup() {
   size(1000, 700);
-  est = loadImage ("jo.png");
-   viragocska = loadImage ("viragkisebb.png");
+  est = loadImage ("virag nelkul_jo hatter.png");
+   viragocska = loadImage ("viragocska2.png");
 
 virag.kpx=width/2;
   virag.kpy=height/2;
