@@ -46,7 +46,7 @@ Virag virag= new Virag();
 
 void setup() {
   size(1000, 700);
-  est = loadImage ("virag nelkul_jo hatter.png");
+  est = loadImage ("Az_est.png");
    viragocska = loadImage ("viragocska2.png");
 
 virag.kpx=width/2;

@@ -28,17 +28,21 @@ class Potty {
     // bal felso
     if (x>width/2-68 && x<width/2 && kpx==width/2-140 && y < height/2) {
       kpx=width/2;
-      r=3.9;
+      r=3.8;
     }
+    
+    x=kpx+sugar*cos(r);
+    y=kpy+sugar*sin(r);
+    
   // }
   }
 
-  void kirajzol() {
-    x=kpx+sugar*cos(r);
-    y=kpy+sugar*sin(r);
+  void kirajzol(float sajat_x, float sajat_y) 
+  { 
     fill(#000000);
-    ellipse(x, y, 10, 10);
+    ellipse(sajat_x, sajat_y, 10, 10);
   }
+  
 }
 
 Potty potty= new Potty();
@@ -57,5 +61,5 @@ void draw() {
   background(est);
 
   potty.mozogj();
-  potty.kirajzol();
+  potty.kirajzol(potty.x,potty.y);
 }
